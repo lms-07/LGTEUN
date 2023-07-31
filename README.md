@@ -63,6 +63,7 @@ pip install sewar==0.4.5
       LrMS/PAN/GT image pairs for testing on reduced-resolution scene. For full-resolution scene, we just reserve 120
       LrMS/PAN image pairs on all the three data sets. Detials as follow:
 
+
     | Data Set | Step Size | Reduced-resolution Image Pairs for Training | Reduced-resolution Image Pairs for Testing | Full-resolution Image Pairs for Testing |
     | :---: | :---: | :---: | :---: | :---: |
     | GF-2 | 52 | 1036 | 136 | 120 |
