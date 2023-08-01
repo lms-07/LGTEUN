@@ -22,9 +22,10 @@ International Joint Conference on Artificial Intelligence (IJCAI) 2023 (15% acce
 
 ## Brief Introduction
 
-> <p align="left">Pan-sharpening aims to increase the spatial resolution of the low-resolution multispectral (LrMS) image with the guidance of the corresponding panchromatic (PAN) image. Although deep learning (DL)-based pan-sharpening methods have achieved promising performance, most of them have a two-fold deficiency. For one thing, the universally adopted black box principle limits the model interpretability. For another thing, existing DL-based methods fail to efficiently capture local and global dependencies at the same time, inevitably limiting the overall performance. To address these mentioned issues, we first formulate the degradation process of the high-resolution multispectral (HrMS) image as a unified variational optimization problem, and alternately solve its data and prior subproblems by the designed iterative proximal gradient descent (PGD) algorithm. Moreover, we customize a Local-Global Transformer (LGT) to simultaneously model local and global dependencies, and further formulate an LGT-based prior module for image denoising. Besides the prior module, we also design a lightweight data module. Finally, by serially integrating the data and prior modules in each iterative stage, we unfold the iterative algorithm into a stage-wise unfolding network, \textbf{L}ocal-\textbf{G}lobal \textbf{T}ransformer \textbf{E}nhanced \textbf{U}nfolding \textbf{N}etwork (LGTEUN), for the interpretable MS pan-sharpening. Comprehensive experimental results on three satellite data sets demonstrate the effectiveness and efficiency of LGTEUN compared with state-of-the-art (SOTA) methods. The source code is available at https://github.com/lms-07/LGTEUN.</p>
+> <p align="left"><i>Pan-sharpening</i> aims to increase the spatial resolution of the low-resolution multispectral (LrMS) image with the guidance of the corresponding panchromatic (PAN) image. Although deep learning (DL)-based pan-sharpening methods have achieved promising performance, most of them have a two-fold deficiency. For one thing, the universally adopted black box principle limits the model interpretability. For another thing, existing DL-based methods fail to efficiently capture local and global dependencies at the same time, inevitably limiting the overall performance. To address these mentioned issues, we first formulate the degradation process of the high-resolution multispectral (HrMS) image as a unified variational optimization problem, and alternately solve its data and prior subproblems by the designed iterative proximal gradient descent (PGD) algorithm. Moreover, we customize a Local-Global Transformer (LGT) to simultaneously model local and global dependencies, and further formulate an LGT-based prior module for image denoising. Besides the prior module, we also design a lightweight data module. Finally, by serially integrating the data and prior modules in each iterative stage, we unfold the iterative algorithm into a stage-wise unfolding network, <b>L</b>ocal-<b>G</b>lobal <b>T</b>ransformer <b>E</b>nhanced <b>U</b>nfolding <b>N</b>etwork (LGTEUN), for the interpretable MS pan-sharpening. Comprehensive experimental results on three satellite data sets demonstrate the effectiveness and efficiency of LGTEUN compared with state-of-the-art (SOTA) methods. The source code is available at https://github.com/lms-07/LGTEUN.</p>
 
-<center> LGTEUN Framework  </center>
+
+**LGTEUN Framework**
 
 ![framework](src/LGTEUN.png)
 
@@ -33,10 +34,9 @@ International Joint Conference on Artificial Intelligence (IJCAI) 2023 (15% acce
 - The software environment is Ubuntu 18.04.5 LTS 64 bit.
 - This project is running on a single Nvidia GeForce RTX 3090 GPU based on Cuda 11.0.
 - We adopt Python 3.6.13, PyTorch 1.9.1+cu111.
-- Personally, the py+torch combination with =mmcv= library need to be chosen carefully, maybe encountering version
-  dismatching problems.
-- Some key commands of my version referring [codebase of PanFormer](https://github.com/zhysora/PanFormer):
-
+- Personally speaking, the py+torch combination with **mmcv** library needs to be chosen carefully, maybe encountering version
+  mismatching problems.
+- Some key commands of my version referring [the codebase of PanFormer](https://github.com/zhysora/PanFormer), as follows:
 ```text
 pip install mmcv==1.2.7
 conda install gdal=3.1.0 -c conda-forge
@@ -50,20 +50,19 @@ pip install sewar==0.4.5
 ```
 
 ## Datasets and File Hierarchy
-- For multispectral pan-sharpening, there are no standard widely used public data sets instead of private datasets
-  constructed by respective research groups. ==To promote the development of pan-sharpening, we also disclose our
-  constructed dataset here through
-  ==[Google Drive](https://drive.google.com/file/d/1SoChKZ3zk1WeMKoSOvKo3AQBiOXPw0Wd/view?usp=drive_link)==.
+- For multispectral pan-sharpening, there are no standard widely-used public data sets instead of private data sets
+  constructed by respective research groups. **To promote the development of this task, we also share our
+  constructed data sets here through
+  [Google Drive](https://drive.google.com/file/d/1SoChKZ3zk1WeMKoSOvKo3AQBiOXPw0Wd/view?usp=drive_link).**
 - Three representative multispectral scenes acquired by three popular multispectral sensors (GaoFen-2, WorldView-2, and
-  WorldView-3) to construct our three data sets, directly named GF-2, WV-2, and WV-3 for convenience.
-    - The constructing codes are based on [tools of PanFormer](https://github.com/zhysora/PanFormer/tree/main/tools).
+  WorldView-3) are utilized to construct our three data sets, directly named GF-2, WV-2, and WV-3 for convenience.
+    - The constructing codes are based on [tools of PanFormer](https://github.com/zhysora/PanFormer/tree/main/tools). **Cool implementation!**
     - For each raw data, the training and testing parts are from the same scene, and cropped to completely separate with no overlapping parts.
     - We follow Wald's protocol to construct image pairs.
     - We set various step sizes for each data set to generate about 1000 LrMS/PAN/GT image pairs for training and 140
       LrMS/PAN/GT image pairs for testing on reduced-resolution scenes. For full-resolution scenes, we just reserve 120
-      LrMS/PAN image pairs on all the three data sets. Details as follow:
-
-
+      LrMS/PAN image pairs on all the three data sets. Details are as follow:
+      
     | Data Set | Step Size | Reduced-resolution Image Pairs for Training | Reduced-resolution Image Pairs for Testing | Full-resolution Image Pairs for Testing |
     | :---: | :---: | :---: | :---: | :---: |
     | GF-2 | 52 | 1036 | 136 | 120 |
@@ -74,7 +73,7 @@ Our project is organized as follows:
 
 ```text
 LGTEUN
-|-- configs             // config files for each involved methods
+|-- configs             // config files for each involved method
 |-- data                // files for storing output pan-sharpening img
 |-- dataset             // data set build related files                    
 |-- log_results         // running logs for each method adopted in our paper
@@ -148,7 +147,7 @@ If you have any problem, please do not hesitate to contact us `msli@mail.sdu.edu
 
 - This project is released under [GPLv3](http://www.gnu.org/licenses/) license.
 - Our task operating framework is implemented based on [PanFormer](https://github.com/zhysora/PanFormer).
-- Our proposed LGTEUN framework is inspired by the following awesome works:
+- Our proposed LGTEUN framework is inspired by many awesome works, and some of them are as follows:
     - [Degradation-Aware Unfolding Half-Shuffle Transformer for Spectral Compressive Imaging](https://proceedings.neurips.cc/paper_files/paper/2022/hash/f621c2ead473ca36763696b712ffda01-Abstract-Conference.html)
       , NeurIPS 2022
     - [Spatial-Frequency Domain Information Integration for Pan-Sharpening](https://link.springer.com/chapter/10.1007/978-3-031-19797-0_16)
