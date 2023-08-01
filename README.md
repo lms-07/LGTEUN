@@ -118,8 +118,8 @@ based methods and six most advanced deep learning based methods.
 
 - We provide all the corresponding [log files] and most [checkpoint wights] for each method to quickly check our
   published results, and some invalid weights are not provided due to model code changes without rollbacks.
-- Our model LGTEUN also has a primary-version name, i.e., UnlgFormer in our codebase owing to keeping model codes
-  unchanged to ensure the effectiveness of checkpoint weights. So does CTINN with INNT.
+- Our model **LGTEUN** also has a primary-version name, i.e., **UnlgFormer** in our codebase owing to keeping model codes
+  unchanged to ensure the effectiveness of checkpoint weights. So does **CTINN** with **INNT**.
 
 ## Citation
 
