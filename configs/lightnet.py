@@ -17,8 +17,7 @@ index = 1
 datas = dataset[index]
 ms_chans = ms_chans_list[index]
 
-# currentPath = '/media/lms/LMS/Strore_Space_ws/Pan-sharpening/LGTEUN_intial'
-currentPath = '/media/lms/LMS/Strore_Space_ws/Pan-sharpening/PanFormer'
+currentPath = '/media/lms/LMS/Strore_Space_ws/Pan-sharpening'
 
 model_type = 'lightnet'
 work_dir = f'data/model_out/{name}'
