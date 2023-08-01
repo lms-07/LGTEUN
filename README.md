@@ -74,12 +74,12 @@ Our project is organized as follows:
 ```text
 LGTEUN
 |-- configs             // config files for each involved method
-|-- data                // files for storing output pan-sharpening img
 |-- dataset             // data set build related files                    
 |-- log_results         // running logs for each method adopted in our paper
 |-- models
 |   |-- base            // basic model framework related files
 |   |-- common          // operations and modules used in compared methods
+|-- model_out                // files for storing output pan-sharpening img
 |-- src                 // source files
 |-- Dataset             // files for storing data sets
 |   |--GF2
