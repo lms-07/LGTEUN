@@ -33,7 +33,7 @@ International Joint Conference on Artificial Intelligence (IJCAI) 2023 (15% acce
 - The software environment is Ubuntu 18.04.5 LTS 64 bit.
 - This project is running on a single Nvidia GeForce RTX 3090 GPU based on Cuda 11.0.
 - We adopt Python 3.6.13, PyTorch 1.9.1+cu111.
-- Personally, the py+torch combination with mmcv library need to be chosen carefully, maybe encountering version
+- Personally, the py+torch combination with =mmcv= library need to be chosen carefully, maybe encountering version
   dismatching problems.
 - Some key commands of my version referring [codebase of PanFormer](https://github.com/zhysora/PanFormer):
 
@@ -51,17 +51,17 @@ pip install sewar==0.4.5
 
 ## Datasets and File Hierarchy
 - For multispectral pan-sharpening, there are no standard widely used public data sets instead of private datasets
-  constructed by respective research groups. ==To promote the development of pan-sharpening, we also disclose the our
+  constructed by respective research groups. ==To promote the development of pan-sharpening, we also disclose our
   constructed dataset here through
   ==[Google Drive](https://drive.google.com/file/d/1SoChKZ3zk1WeMKoSOvKo3AQBiOXPw0Wd/view?usp=drive_link)==.
-- Three representative multispectral scenes acquired by three popular multispectral senors (GaoFen-2, WorldView-2, and
+- Three representative multispectral scenes acquired by three popular multispectral sensors (GaoFen-2, WorldView-2, and
   WorldView-3) to construct our three data sets, directly named GF-2, WV-2, and WV-3 for convenience.
     - The constructing codes are based on [tools of PanFormer](https://github.com/zhysora/PanFormer/tree/main/tools).
     - For each raw data, the training and testing parts are from the same scene, and cropped to completely separate with no overlapping parts.
-    - We follow Wald's protocol to contruct image pairs.
+    - We follow Wald's protocol to construct image pairs.
     - We set various step sizes for each data set to generate about 1000 LrMS/PAN/GT image pairs for training and 140
-      LrMS/PAN/GT image pairs for testing on reduced-resolution scene. For full-resolution scene, we just reserve 120
-      LrMS/PAN image pairs on all the three data sets. Detials as follow:
+      LrMS/PAN/GT image pairs for testing on reduced-resolution scenes. For full-resolution scenes, we just reserve 120
+      LrMS/PAN image pairs on all the three data sets. Details as follow:
 
 
     | Data Set | Step Size | Reduced-resolution Image Pairs for Training | Reduced-resolution Image Pairs for Testing | Full-resolution Image Pairs for Testing |
@@ -148,7 +148,7 @@ If you have any problem, please do not hesitate to contact us `msli@mail.sdu.edu
 
 - This project is released under [GPLv3](http://www.gnu.org/licenses/) license.
 - Our task operating framework is implemented based on [PanFormer](https://github.com/zhysora/PanFormer).
-- Our proposed LGTEUN framework is inspired the following awesome works:
+- Our proposed LGTEUN framework is inspired by the following awesome works:
     - [Degradation-Aware Unfolding Half-Shuffle Transformer for Spectral Compressive Imaging](https://proceedings.neurips.cc/paper_files/paper/2022/hash/f621c2ead473ca36763696b712ffda01-Abstract-Conference.html)
       , NeurIPS 2022
     - [Spatial-Frequency Domain Information Integration for Pan-Sharpening](https://link.springer.com/chapter/10.1007/978-3-031-19797-0_16)
