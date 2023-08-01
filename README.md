@@ -61,7 +61,7 @@ pip install sewar==0.4.5
     - We follow Wald's protocol to construct image pairs.
     - We set various step sizes for each data set to generate about 1000 LrMS/PAN/GT image pairs for training and 140
       LrMS/PAN/GT image pairs for testing on reduced-resolution scenes. For full-resolution scenes, we just reserve 120
-      LrMS/PAN image pairs on all the three data sets. Details are as follow:
+      LrMS/PAN image pairs on all the three data sets. Details are as follows:
       
     | Data Set | Step Size | Reduced-resolution Image Pairs for Training | Reduced-resolution Image Pairs for Testing | Full-resolution Image Pairs for Testing |
     | :---: | :---: | :---: | :---: | :---: |
