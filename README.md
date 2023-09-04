@@ -116,7 +116,7 @@ based methods and six most advanced deep learning based methods.
 
 ## Notes
 
-- We provide all the corresponding [**log files**](https://drive.google.com/file/d/1QT-eYVRa_eLcHuTEdFPi5UmNXEOVnyc6/view?usp=drive_link) and most [**checkpoint wights**](https://drive.google.com/file/d/1Wr41DT2NABi9stLY2KnDJdGI_WQ_o2NK/view?usp=drive_link) for each method to quickly check our
+- We provide all the corresponding [**log files**](https://drive.google.com/file/d/1QT-eYVRa_eLcHuTEdFPi5UmNXEOVnyc6/view?usp=drive_link) and most [**checkpoint weights**](https://drive.google.com/file/d/1Wr41DT2NABi9stLY2KnDJdGI_WQ_o2NK/view?usp=drive_link) for each method to quickly check our
   published results through **Google Drive**, and some invalid weights are not provided due to model code changes without rollbacks.
 - Our model **LGTEUN** also has a primary-version name, i.e., **UnlgFormer** in our codebase owing to keeping model codes
   unchanged to ensure the effectiveness of checkpoint weights. So does **CTINN** with **INNT**.
