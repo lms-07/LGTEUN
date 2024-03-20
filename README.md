@@ -1,4 +1,4 @@
-# Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening
+# [IJCAI 2023] Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening
 
 [Mingsong Li](https://lms-07.github.io/), Yikun Liu, Tao
 Xiao, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
@@ -8,7 +8,7 @@ Xiao, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping 
 -----------
 This repository is the official implementation of our paper:
 [Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening](https://arxiv.org/abs/2304.14612),
-International Joint Conference on Artificial Intelligence (IJCAI) 2023 (15% acceptance).
+International Joint Conference on Artificial Intelligence (IJCAI) 2023 (～ 14% acceptance).
 
 ## Contents
 
@@ -18,7 +18,7 @@ International Joint Conference on Artificial Intelligence (IJCAI) 2023 (15% acce
 1. [Implementations of Compared Methods](#Implementations-of-Compared-Methods)
 1. [Notes](#Notes)
 1. [Citation](#Citation)
-1. [License and Acknowledgement](License-and-Acknowledgement)
+1. [License and Acknowledgement](#License-and-Acknowledgement)
 
 ## Brief Introduction
 
@@ -125,17 +125,22 @@ based methods and six most advanced deep learning based methods.
 
 Please kindly cite our work if this work is helpful for your research.
 
-[1] M. Li, Y. Liu, T. Xiao, Y. Huang and G. Yang, "Local-Global Transformer Enhanced Unfolding Network for
-Pan-sharpening," arXiv preprint arXiv:2304.14612, 2023.
+[1] Li, Mingsong, Yikun Liu, Tao Xiao, Yuwen Huang, and Gongping Yang. "Local-global transformer enhanced unfolding network for pan-sharpening." In Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence, pp. 1071-1079. 2023.
 
 BibTex entry:
 
 ```text
-@article{li2023local,
-  title={Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening},
-  author={Li, Mingsong and Liu, Yikun and Xiao, Tao and Huang, Yuwen and Yang, Gongping},
-  journal={arXiv preprint arXiv:2304.14612},
-  year={2023}
+@inproceedings{li2023local,
+title={Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening},
+author={Li, Mingsong and Liu, Yikun and Xiao, Tao and Huang, Yuwen and Yang, Gongping},
+booktitle = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence},
+pages={1071--1079},
+numpages = {9},
+articleno = {119},
+year = {2023},
+isbn = {978-1-956792-03-4},
+location = {<conf-loc>, <city>Macao</city>, <country>P.R.China</country>, </conf-loc>},
+series = {IJCAI '23}
 }
 ```
 
