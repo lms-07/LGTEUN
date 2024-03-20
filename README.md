@@ -8,7 +8,7 @@ Xiao, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping 
 -----------
 This repository is the official implementation of our paper:
 [Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening](https://arxiv.org/abs/2304.14612),
-International Joint Conference on Artificial Intelligence (IJCAI) 2023 (～ 14% acceptance).
+International Joint Conference on Artificial Intelligence (IJCAI) 2023 (～14% acceptance).
 
 ## Contents
 
