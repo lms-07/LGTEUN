@@ -125,7 +125,7 @@ based methods and six most advanced deep learning based methods.
 
 Please kindly cite our work if this work is helpful for your research.
 
-[1] Li, Mingsong, Yikun Liu, Tao Xiao, Yuwen Huang, and Gongping Yang. "Local-global transformer enhanced unfolding network for pan-sharpening." In Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence, pp. 1071-1079. 2023.
+[1] Li, Mingsong, Yikun Liu, Tao Xiao, Yuwen Huang, and Gongping Yang. "Local-global transformer enhanced unfolding network for pan-sharpening." In Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), pp. 1071-1079. 2023.
 
 BibTex entry:
 
