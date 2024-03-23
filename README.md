@@ -133,14 +133,11 @@ BibTex entry:
 @inproceedings{li2023local,
 title={Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening},
 author={Li, Mingsong and Liu, Yikun and Xiao, Tao and Huang, Yuwen and Yang, Gongping},
-booktitle = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence},
+booktitle = {Proceedings of the International Joint Conference on Artificial Intelligence, (IJCAI)},
 pages={1071--1079},
 numpages = {9},
 articleno = {119},
 year = {2023},
-isbn = {978-1-956792-03-4},
-location = {<conf-loc>, <city>Macao</city>, <country>P.R.China</country>, </conf-loc>},
-series = {IJCAI '23}
 }
 ```
 
