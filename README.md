@@ -1,7 +1,7 @@
 # [IJCAI 2023] Local-Global Transformer Enhanced Unfolding Network for Pan-sharpening
 
-[Mingsong Li](https://lms-07.github.io/), Yikun Liu, Tao
-Xiao, [Yuwen Huang](https://jsj.hezeu.edu.cn/info/1302/6525.htm), and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
+[Mingsong Li](https://lms-07.github.io/), [Yikun Liu](https://scholar.google.com/citations?user=aLjH3NUAAAAJ&hl=en), Tao
+Xiao, Yuwen Huang, and [Gongping Yang](https://faculty.sdu.edu.cn/gpyang)
 
 [Time Lab](https://time.sdu.edu.cn/), [SDU](https://www.sdu.edu.cn/)
 
@@ -79,7 +79,7 @@ LGTEUN
 |-- models
 |   |-- base            // basic model framework related files
 |   |-- common          // operations and modules used in compared methods
-|-- model_out                // files for storing output pan-sharpening img
+|-- model_out           // files for storing output pan-sharpening img
 |-- src                 // source files
 |-- Dataset             // files for storing data sets
 |   |--GF2
